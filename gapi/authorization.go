@@ -29,6 +29,7 @@ func (server *Server) authorizeUser(ctx context.Context) (*token.Payload, error)
 	fields := strings.Fields(authHeader)
 	if len(fields) < 2 {
 		return nil, fmt.Errorf("invalid authorization header format")
+		
 	}
 
 	authType := strings.ToLower(fields[0])
