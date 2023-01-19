@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Check out code
-      uses: actions/checkout
+      uses: actions/checkout@v2
 
     - name: Install kubectl
-      uses: azure/setup-kubectl
+      uses: azure/setup-kubectl@v1
       with:
         version: 'v1.21.3'
       id: install
